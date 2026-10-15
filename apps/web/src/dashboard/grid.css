@@ -1,0 +1,23 @@
+/* react-grid-layout styling to match the design system */
+.react-grid-item.react-grid-placeholder {
+  background: var(--color-primary);
+  opacity: 0.12;
+  border-radius: 12px;
+}
+.react-grid-item.react-draggable-dragging > section {
+  box-shadow: var(--shadow-pop);
+}
+.react-grid-item > .react-resizable-handle {
+  z-index: 2;
+}
+.react-grid-item > .react-resizable-handle::after {
+  right: 6px;
+  bottom: 6px;
+  width: 8px;
+  height: 8px;
+  border-color: #94a3b8;
+}
+.edit-grid {
+  background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1.2px);
+  background-size: 16px 16px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@insightflow/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.1.3",
+    "@fastify/rate-limit": "^10.3.0",
+    "@insightflow/db": "workspace:*",
+    "@insightflow/shared": "workspace:*",
+    "@node-rs/argon2": "^2.2.2",
+    "fastify": "^5.12.7",
+    "kysely": "^0.28.17",
+    "openai": "^7.33.0",
+    "zod": "^4.6.7"
+  }
+}
